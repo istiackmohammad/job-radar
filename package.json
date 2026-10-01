@@ -1,0 +1,17 @@
+{
+  "name": "job-radar",
+  "version": "1.0.0",
+  "description": "A small daily job radar: pull remote roles from public feeds and company job boards, keep the ones you can actually get, score them against your real work, and mail yourself a shortlist.",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "dry": "node src/run.js --dry-run",
+    "preview": "node src/run.js --dry-run --preview",
+    "run": "node src/run.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}
