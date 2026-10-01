@@ -28,7 +28,7 @@ Edit `src/profile.js` for your own skills, projects and links. Node 20 or newer,
 
 ## Design notes
 
-The pipeline is deliberately boring: plain functions, one JSON state file written atomically, no database, no queue. A cron job and a 600 line codebase are easy to trust and easy to change when a source changes its format, which happens about once a month.
+The pipeline is deliberately boring: plain functions, one JSON state file written atomically, no database, no queue. A cron job and a codebase this size are easy to trust and easy to change when a source changes its format, which happens about once a month.
 
 Each source is wrapped so one failing feed logs a line and the run carries on. The state file prunes itself after 120 days.
 
